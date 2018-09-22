@@ -41,8 +41,8 @@
 --------------------------------------------------------------------------------------------------------------- */
 #pageintro{padding:150px 0;}
 
-#pageintro article{display:block; max-width:60%;}
-#pageintro article .heading{margin-bottom:30px; font-size:42px;}
+#pageintro article{display:block; max-width:60%; z-index: -1;}
+#pageintro article .heading{color: #fff; font: 42px 'Source Sans Pro', sans-serif;:  margin-bottom:30px;}
 #pageintro article p:last-of-type{margin:0;}
 
 
@@ -77,9 +77,9 @@
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:80px 0;}
+#footer{padding:30px 0;}
 
-#footer .title{margin:0 0 50px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
+#footer .title{margin:0 0 20px 0; padding:0; font-size:1.2rem; text-transform:uppercase;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
@@ -118,10 +118,8 @@
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
 
-nav ul, nav ol{margin:0; padding:0; list-style:none;}
-
-#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
+#breadcrumb, .sidebar nav{line-height:normal;}
+#breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:10px; line-height:10px;}
 
 -->
 /* Breadcrumb */
@@ -181,7 +179,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#888888; background-color:#FFFFFF;}
+body{color:#000; background-color:#FFFFFF;}
 a{color:#4D642D;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -196,11 +194,11 @@ input:focus, textarea:focus, *:required:focus{border-color:#4D642D;}
 
 /* Rows */
 .row0{color:#FFFFFF; background-color:#313131;}
-.row1{color:#888888; background-color:#FFFFFF;}
+.row1{color:##000; background-color:#FFFFFF;}
 .row2, .row2 a{}
-.row3{color:#888888; background-color:#FFFFFF;}
+.row3{color:##000; background-color:#FFFFFF;}
 .row4{color:#FFFFFF; background-color:#313131; border-color:#4D642D;}
-.row5, .row5 a{color:#888888; background-color:#FFFFFF;}
+.row5, .row5 a{color:#000; background-color:#FFFFFF;}
 
 .coloured{color:#FFFFFF; background-color:#4D642D;}
 .coloured a{color:#283A10;}
@@ -220,7 +218,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#4D642D;}
 /* Footer */
 #footer .title{}
 #footer .linklist li{border-color:#414141;}
-
+#footer a{color: #fff;}
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#FFFFFF; background-color:#414141;}
 #footer input:focus{border-color:#4D642D;}
@@ -228,13 +226,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#4D642D;}
 
 
 /* Navigation */
-#mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#4D642D; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.6);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#4D642D;}
-#mainav form select{color:#FFFFFF; background-color:#414141;}
-
-#breadcrumb a{color:#888888; background-color:inherit;}
+#breadcrumb a{color:#000; background-color:inherit;}
 #breadcrumb li:last-child a{color:#4D642D;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
@@ -284,9 +276,6 @@ table a, #comments a{background-color:inherit;}
 	#header{padding:15px 0;}
 	#header #logo{margin:0;}
 
-	#mainav{}
-	#mainav ul{display:none;}
-	#mainav form{display:block; margin-top:12px;}
 
 	#breadcrumb{}
 
