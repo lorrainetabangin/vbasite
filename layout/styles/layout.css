@@ -357,3 +357,52 @@ h5 {
   color: #282428;
   line-height: 30px;
 }
+
+.picontainer {
+  position: relative;
+  width: 250%;
+}
+
+.pic {
+  display: block;
+  width: relative;
+  height: auto;
+}
+.picoverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8EA86C;
+  overflow: hidden;
+  width: 250px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.one_third:hover .picoverlay {
+  height: 100%;
+}
+.one_half:hover .picoverlay {
+  height: 100%;
+}
+
+.pictext {
+  color: white;
+  font-size: 18px;
+  font: 'Source Sans Pro', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.polaroid {
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
